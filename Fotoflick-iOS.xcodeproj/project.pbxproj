@@ -90,6 +90,8 @@
 		FB9C396E18252978007F3AB9 /* UIImageView+CBWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C396118252978007F3AB9 /* UIImageView+CBWebImage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FB9C396F18252978007F3AB9 /* UIImageView+CBWebImageAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C396318252978007F3AB9 /* UIImageView+CBWebImageAnimation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FB9C397218252A6C007F3AB9 /* FOImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C397118252A6C007F3AB9 /* FOImageViewCell.m */; };
+		FB9C397518255B24007F3AB9 /* DetailCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C397418255B24007F3AB9 /* DetailCollectionViewController.m */; };
+		FB9C397818256109007F3AB9 /* FOImageGalleryViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9C397718256109007F3AB9 /* FOImageGalleryViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -262,6 +264,10 @@
 		FB9C396318252978007F3AB9 /* UIImageView+CBWebImageAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CBWebImageAnimation.m"; sourceTree = "<group>"; };
 		FB9C397018252A6C007F3AB9 /* FOImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOImageViewCell.h; sourceTree = "<group>"; };
 		FB9C397118252A6C007F3AB9 /* FOImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOImageViewCell.m; sourceTree = "<group>"; };
+		FB9C397318255B24007F3AB9 /* DetailCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCollectionViewController.h; sourceTree = "<group>"; };
+		FB9C397418255B24007F3AB9 /* DetailCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCollectionViewController.m; sourceTree = "<group>"; };
+		FB9C397618256109007F3AB9 /* FOImageGalleryViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOImageGalleryViewCell.h; sourceTree = "<group>"; };
+		FB9C397718256109007F3AB9 /* FOImageGalleryViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOImageGalleryViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,10 +353,14 @@
 				FB9C37DB182515F3007F3AB9 /* Main.storyboard */,
 				FB9C37DE182515F3007F3AB9 /* ViewController.h */,
 				FB9C37DF182515F3007F3AB9 /* ViewController.m */,
+				FB9C397318255B24007F3AB9 /* DetailCollectionViewController.h */,
+				FB9C397418255B24007F3AB9 /* DetailCollectionViewController.m */,
 				FB9C381618251E22007F3AB9 /* RecipeCollectionViewController.h */,
 				FB9C381718251E22007F3AB9 /* RecipeCollectionViewController.m */,
 				FB9C397018252A6C007F3AB9 /* FOImageViewCell.h */,
 				FB9C397118252A6C007F3AB9 /* FOImageViewCell.m */,
+				FB9C397618256109007F3AB9 /* FOImageGalleryViewCell.h */,
+				FB9C397718256109007F3AB9 /* FOImageGalleryViewCell.m */,
 				FB9C37E1182515F3007F3AB9 /* Images.xcassets */,
 				FB9C37D0182515F3007F3AB9 /* Supporting Files */,
 				FB9C3813182519BB007F3AB9 /* FOImagePFObject.h */,
@@ -707,10 +717,12 @@
 				FB9C396A18252978007F3AB9 /* CBWebImageDownloader.m in Sources */,
 				FB9C396818252978007F3AB9 /* CBWebImageCacheDownloadClient.m in Sources */,
 				FB9C392618252837007F3AB9 /* NSOperationQueue+CB.m in Sources */,
+				FB9C397518255B24007F3AB9 /* DetailCollectionViewController.m in Sources */,
 				FB9C394218252837007F3AB9 /* Reachability.m in Sources */,
 				FB9C393818252837007F3AB9 /* CBActionSheet.m in Sources */,
 				FB9C392218252837007F3AB9 /* NSMutableSet+CB.m in Sources */,
 				FB9C392518252837007F3AB9 /* NSNumber+CB.m in Sources */,
+				FB9C397818256109007F3AB9 /* FOImageGalleryViewCell.m in Sources */,
 				FB9C391A18252837007F3AB9 /* CBUtils.m in Sources */,
 				FB9C392718252837007F3AB9 /* NSSet+CB.m in Sources */,
 				FB9C393518252837007F3AB9 /* UIToolbar+CB.m in Sources */,

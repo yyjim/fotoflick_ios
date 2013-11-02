@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "FOImageViewCell.h"
 #import "CBWebImage.h"
+#import "DetailCollectionViewController.h"
 
 #import "FOImagePFObject.h"
 
@@ -144,5 +145,17 @@
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
 {
 }
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showPhoto"]) {
+        NSArray *indexPaths = [self.collectionView indexPathsForSelectedItems];
+        DetailCollectionViewController *destViewController = segue.destinationViewController;
+        NSIndexPath *indexPath = [indexPaths objectAtIndex:0];
+        destViewController.imageURLs = self.imageURLs;
+        [self.collectionView deselectItemAtIndexPath:indexPath animated:NO];
+    }
+}
+
 
 @end

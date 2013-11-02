@@ -16,9 +16,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
-        // Initialization code
-       // self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pic_frame.png"]];
     }
     return self;
 }
