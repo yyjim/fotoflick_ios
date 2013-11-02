@@ -1,0 +1,6 @@
+[submodule "Vendor/CBToolkit"]
+	path = Vendor/CBToolkit
+	url = git@github.com:cardinalblue/CBToolkit.git
+[submodule "Vendor/CBWebImage"]
+	path = Vendor/CBWebImage
+	url = git@github.com:cardinalblue/CBWebImage.git
