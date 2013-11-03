@@ -15,6 +15,7 @@
 #import "FOImagePFObject.h"
 
 @interface ViewController ()
+@property (strong) IBOutlet UIActivityIndicatorView *indicatorView;
 @property (strong) NSArray *imageURLs;
 @end
 
@@ -41,7 +42,7 @@
 
 - (void)awakeFromNib
 {
-    [NSTimer scheduledTimerWithTimeInterval:20 target:self
+    [NSTimer scheduledTimerWithTimeInterval:15 target:self
                                    selector:@selector(handleTimer:)
                                    userInfo:nil
                                     repeats:YES];
@@ -74,10 +75,14 @@
     [query whereKey:@"createdAt" lessThan:currentDate];
     [query orderByDescending:@"createdAt"];
     
+    [self.indicatorView startAnimating];
+    [self.view bringSubviewToFront:self.indicatorView];
+    
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (objects) {
             [self handleFetchData:objects];
         }
+        [self.indicatorView stopAnimating];
     }];
 }
 
@@ -95,6 +100,11 @@
 {
     [super viewDidLoad];
     self.collectionView.backgroundColor = [UIColor blackColor];
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo-titlebar.png"]];
+    imageView.center = CGPointMake(self.navigationController.navigationBar.frame.size.width / 2, 22);
+    [self.navigationController.navigationBar addSubview:imageView];
+    
     
     UICollectionViewFlowLayout *collectionViewLayout = (UICollectionViewFlowLayout*)self.collectionView.collectionViewLayout;
     collectionViewLayout.sectionInset = UIEdgeInsetsMake(0, 11, 0, 11);

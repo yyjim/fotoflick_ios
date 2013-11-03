@@ -26,7 +26,7 @@
     self.imageView.clipsToBounds = YES;
     self.imageView.contentMode = UIViewContentModeScaleAspectFill;
     self.imageView.layer.borderColor = CBRGBA(255, 255, 255, 0.3).CGColor;
-    self.imageView.layer.borderWidth = 0.5;
+    self.imageView.layer.borderWidth = 1;
 }
 
 @end
